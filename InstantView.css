@@ -1,7 +1,7 @@
 body {
   margin: 0;
   padding: 0;
-  background-color: #eeeeee;
+  background-color: #e0e0e0;
   overflow: hidden;
 }
 
@@ -11,8 +11,8 @@ body {
   text-align: left;
   padding-top: 20px;
   padding-left: 50px;
-  color: rgba(0, 0, 100, 1);
-  text-shadow: 0 0 1px black;
+  color: rgba(0, 0, 80, 1);
+  text-shadow: 0 1px 1px white;
 }
 
 #header .subtitle {
@@ -22,29 +22,31 @@ body {
   color: black;
   font-family: sans-serif;
   font-weight: normal;
+  text-shadow: 0 1px 1px white;
 }
 
 #mainContent {
-  width: 90%;
+  width: 75%;
   margin: 0 auto;
 }
 
 #input, #preview {
-  border: none;
-  margin: 10px;
+  border: dashed 1px #bbbbbb;
+  margin: 10px auto;
   padding: 10px;
-  float: left;
-  width: 40%;
+  min-width: 45%;
+  max-width: 45%;
   height: 500px;
-  -moz-border-radius: 10px;
-  -webkit-border-radius: 10px;
-  -moz-box-shadow: -2px -2px 2px #cfcfcf inset;
-  border-top: solid 1px #dddddd;
-  border-left: solid 1px #dddddd;
+  background-color: #eeeeee;
+  -moz-box-shadow: 0 0 5px #bbbbbb;
+}
+
+#input {
+  float: left;
 }
 
 #preview {
-  background-color: white;
+  float: right;
   padding-left: 20px;
   padding-right: 20px;
 }
@@ -52,4 +54,13 @@ body {
 code {
   background-color: white;
   border: solid 1px #dddddd;
+}
+
+blockquote {
+  border-left: solid 5px #cccccc;
+  padding-left: 10px;
+  font-family: sans-serif;
+  font-style: italic;
+  color: #666666;
+  font-size: 0.8em;
 }
